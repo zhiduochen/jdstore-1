@@ -1,13 +1,32 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Jdstore </title>
+    <title>马拉松赛</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
+
+  <div>
+    <div class="search">
+      <form action="/products/search" accept-charset="UTF-8" method="get">
+        <input name="utf8" type="hidden" value="✓">
+        <input class="search-input" type="text" name="query_string" value="" placeholder="输入你要搜索的商品">
+        <button type="submit" class="search-button pa tc"><i class="fa fa-search"></i></button>
+      </form>
+    </div>
+  </div>
+
+  <div class="cart-wrap">
+    <div class="cart">
+      <a href="/carts">
+         <i class="fa fa-shopping-cart cart-icon "></i>我的购物车(0) &gt;
+      </a>
+    </div>
+  </div>
+  </div>
   <body>
 
     <div class="container-fluid">
@@ -19,4 +38,5 @@
     <%= render "common/footer" %>
 
   </body>
+
 </html>
