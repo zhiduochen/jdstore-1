@@ -2,6 +2,7 @@
 
 使用figaro管理密码
 修改seed档
+全栈营二期JDSTORE作业
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
